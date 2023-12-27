@@ -7,7 +7,7 @@ import { getRandomInt } from "@/modules/utils";
 const Hero: FC = () => {
 
     const [textIndex, setTextIndex] = useState(0);
-    const texts = ["any artist.", "singers.", "painters.", "photographers.", "dancers.", "actors.", "entertainers."];
+    const texts = ["any artist.", "singers.", "painters.", "photographers.", "content creators.", "actors.", "entertainers."];
 
     useEffect(() => {
         let interval = setInterval(() => {

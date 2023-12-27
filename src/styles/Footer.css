@@ -17,4 +17,17 @@
     flex-basis: 70%;
     z-index: 2;
     border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-inner img{
+    height: 5vw;
+    opacity: 0.8;
+}
+
+.footer-inner p {
+    flex-basis: 100%;
+    text-align: center;
 }
