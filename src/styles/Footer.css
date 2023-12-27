@@ -31,3 +31,29 @@
     flex-basis: 100%;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .footer{
+        min-height: 40vw;
+        margin-top: 25vw;
+    }
+
+    .footer-inner{
+        min-height: 20vw;
+        top: -10.5vw;
+    }
+
+    .footer-inner img{
+        height: 15vw;
+        opacity: 0.8;
+    }
+
+    .footer-inner p {
+        font-size: 2vw;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+
+}

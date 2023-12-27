@@ -5,11 +5,13 @@ type Props = {
     title: string;
     description: string;
     favIcon?: string;
+    themeColor?: string;
 }
 const Meta : FC<Props> = ({
                             title = "PigmentToken",
                             description = "Support an artist with a pigment.",
-                            favIcon = "/img/trans.png"
+                            favIcon = "/img/trans.png",
+                            themeColor = "#fee221",
                           }) => {
 
     useEffect(() => {
@@ -52,6 +54,7 @@ const Meta : FC<Props> = ({
             <title>{title}</title>
             <meta name="description" content={description}/>
             <link rel="icon" type="image/png" href={favIcon}/>
+            <meta name="theme-color" content={themeColor}/>
 
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4ZSRFLJNY"></script>
 

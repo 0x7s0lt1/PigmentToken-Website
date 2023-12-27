@@ -29,11 +29,11 @@ const Index : FC = () => {
                 <div>
 
                 </div>
-                <div className="my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
+                <div className="stick my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
                      data-aos="zoom-in-up"></div>
-                <div className="my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
+                <div className="stick my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
                      data-aos="zoom-in-up"></div>
-                <div className="my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
+                <div className="stick my-5 rounded-5 shadow bg-ligh p-lg-5 w-100" style={{background: "rgba(115, 43, 11, 0.2)"}}
                      data-aos="zoom-in-up"></div>
             </MainLayout>
             <Footer/>

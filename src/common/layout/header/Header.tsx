@@ -20,7 +20,7 @@ const Header : FC = () => {
                         <Link href={"/about"}>
                             About
                         </Link>
-                        <w3m-button/>
+                        <w3m-button loadingLabel="Wait a Pigment..."/>
                     </nav>
                 </header>
 

@@ -15,7 +15,6 @@
     position: sticky;
     top:0px;
     z-index: 5;
-    transform: scaleX(1.1);
 }
 
 .sticky{
@@ -82,6 +81,26 @@ label{
     text-transform: lowercase;
 }
 
-.wallet-connect-btn{
-    border: 1px solid wheat;
+
+
+@media only screen and (max-width: 768px) {
+
+    .sticky{
+        transform: scaleY(0.9) !important;
+        top: -3vw !important;
+    }
+
+    .logo{
+        flex-basis: 50%;
+        font-size: 4vw;
+    }
+
+    .header nav{
+        flex-basis: 50%;
+    }
+
+    .header nav a{
+        display: none;
+    }
+
 }

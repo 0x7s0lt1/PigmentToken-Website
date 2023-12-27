@@ -22,8 +22,12 @@ html,body{
     scroll-behavior: smooth;
 }
 
-.message{
-    border: 1px dotted wheat;
+.d-d-none{
+    display: none !important;
+}
+
+.m-d-none{
+    display: block !important;
 }
 
 .plc{
@@ -40,3 +44,39 @@ html,body{
     height: 20vw !important;;
     max-height: 20vw;
 }
+
+.stick{
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    html,body{
+        max-width: 100vw;
+    }
+
+    .d-d-none{
+        display: block !important;
+    }
+
+    .m-d-none{
+        display: none !important;
+    }
+
+    .stick{
+        min-height: 13vw;
+    }
+
+    .m-mb-10{
+        margin-bottom: 45vw !important;
+    }
+
+    .pg-up{
+        padding: 1vw;
+        background: rgba(121, 60, 33, 1);
+    }
+
+
+
+}
+

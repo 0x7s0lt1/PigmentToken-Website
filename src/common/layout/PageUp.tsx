@@ -25,9 +25,10 @@ const PageUp : FC = () => {
                     right: "30px",
                     color: "",
                     textDecoration: "none",
-                    background: "transparent",
+                    // background: "transparent",
+                    background: "rgba(121, 60, 33, 1)",
                     border: "1px solid wheat",
-                }} className="rounded p-xl-3 text-light shadow" >
+                }} className="rounded p-xl-3 text-light shadow pg-up" >
                     <ArrowUp></ArrowUp>
                 </Link>
             }

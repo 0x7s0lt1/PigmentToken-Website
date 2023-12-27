@@ -25,7 +25,7 @@ const Hero: FC = () => {
     return (
         <>
             <section className="booking-wrapper mt-5 justify-content-start">
-                <img src="/img/trans.png" alt={"image"} className="drone" />
+                <img src="/img/trans.png" alt={"image"} className="drone"/>
                 <div className="w50">
                     <h1>
                         With pigment token,<br/> you can support&nbsp;
@@ -38,11 +38,16 @@ const Hero: FC = () => {
                             {texts[textIndex]}
                         </ReactTextransition>
                     </h1>
-                    <span className="wheat">
+                    <span className="m-d-none wheat">
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </span>
                 </div>
             </section>
+            <p className="d-d-none m-p wheat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
         </>
     )
 }
