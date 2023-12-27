@@ -9,7 +9,7 @@ const projectId = '1bcfe23b5a3b21d319fdb5cfc819af1a'
 const mainnet = {
     chainId: 137,
     name: 'Polygon Mainnet',
-    currency: 'MATIC',
+    currency: 'PGMT',
     explorerUrl: 'https://polygonscan.com',
     rpcUrl: 'https://polygon-rpc.com'
 }
@@ -25,6 +25,12 @@ const metadata = {
 createWeb3Modal({
     ethersConfig: defaultConfig({ metadata }),
     chains: [mainnet],
+    tokens: {
+        137: {
+            address: '0xC76440DbdB9B42Ae2BF0269D12280614604d43e8',
+            image: 'https://pgmt.vercel.app/img/trans.png'
+        }
+    },
     projectId
 })
 
