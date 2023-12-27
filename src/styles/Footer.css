@@ -1,0 +1,20 @@
+.footer{
+    background: rgb(133, 68, 40);
+    min-width: 100vw;
+    min-height: 20vw;
+    box-shadow: 0px 0px 50px rgba(192, 114, 33, 0.5);
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-inner{
+    background: rgba(121, 60, 33, 1);
+    border-radius: 30px;
+    min-height: 10vw;
+    position: relative;
+    top: -2.5vw;
+    flex-basis: 70%;
+    z-index: 2;
+    border: 2px solid white;
+}
