@@ -6,12 +6,22 @@ type Props = {
     description: string;
     favIcon?: string;
     themeColor?: string;
+    ogUrl?: string;
+    ogType?: string;
+    ogTitle?: string;
+    ogDescription?: string;
+    ogImage?: string;
 }
 const Meta : FC<Props> = ({
                             title = "PigmentToken",
                             description = "Support an artist with a pigment.",
                             favIcon = "/img/trans.png",
                             themeColor = "#fee221",
+                            ogUrl = "https://pigmentoken.org",
+                            ogType = "website",
+                            ogTitle = "PigmentToken",
+                            ogDescription = "Support an artist with a pigment.",
+                            ogImage = "https://pigmentoken.org/img/og-min.png",
                           }) => {
 
     useEffect(() => {
@@ -32,7 +42,7 @@ const Meta : FC<Props> = ({
             y = l.getElementsByTagName(r)[0];
             // @ts-ignore
             y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "j467kvbc6e");
+        })(window, document, "clarity", "script", "kd6hnl6qd6");
 
         // GOOGLE ANALYTICS
         // @ts-ignore
@@ -43,7 +53,7 @@ const Meta : FC<Props> = ({
         gtag('js', new Date());
 
         // @ts-ignore
-        gtag('config', 'G-B4ZSRFLJNY');
+        gtag('config', 'G-3HNCJE62LP');
 
     },[]);
 
@@ -56,7 +66,14 @@ const Meta : FC<Props> = ({
             <link rel="icon" type="image/png" href={favIcon}/>
             <meta name="theme-color" content={themeColor}/>
 
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4ZSRFLJNY"></script>
+
+            <meta property="og:url" content={ogUrl}/>
+            <meta property="og:type" content={ogType}/>
+            <meta property="og:title" content={ogTitle}/>
+            <meta property="og:description" content={ogDescription}/>
+            <meta property="og:image" content={ogImage}/>
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HNCJE62LP"></script>
 
         </Head>
     )
