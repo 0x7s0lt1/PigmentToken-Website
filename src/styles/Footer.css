@@ -24,6 +24,7 @@
 }
 .footer-inner img{
     height: 5vw;
+    width: 15vw;
     opacity: 0.8;
 }
 
@@ -46,6 +47,7 @@
 
     .footer-inner img{
         height: 15vw;
+        width: 35vw;
         opacity: 0.8;
     }
 
