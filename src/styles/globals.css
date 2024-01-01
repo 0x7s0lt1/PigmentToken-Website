@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: Rubik;
+    src: url('fonts/RubikDoodleShadow-Regular.ttf');
+}
+
+.text-rubik{
+    font-family: Rubik !important;
+}
+
 html{
     background: linear-gradient(150deg, #fee221 0%, #ceb71b 100%) ;
     /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1010%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(254%2c 226%2c 33%2c 1)'%3e%3c/rect%3e%3cpath d='M-45.35 483.96 a153.73 153.73 0 1 0 307.46 0 a153.73 153.73 0 1 0 -307.46 0z' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M661.08 89.44 a131.83 131.83 0 1 0 263.66 0 a131.83 131.83 0 1 0 -263.66 0z' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M202.17 357.12 a108.67 108.67 0 1 0 217.34 0 a108.67 108.67 0 1 0 -217.34 0z' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M890.16 291.44 a178.05 178.05 0 1 0 356.1 0 a178.05 178.05 0 1 0 -356.1 0z' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M258.092%2c680.624C297.767%2c679.117%2c338.575%2c667.091%2c358.341%2c632.657C378.037%2c598.344%2c367.752%2c557.132%2c348.963%2c522.314C328.926%2c485.183%2c300.253%2c448.498%2c258.092%2c446.885C213.803%2c445.19%2c176.837%2c476.69%2c154.322%2c514.866C131.384%2c553.76%2c119.761%2c602.537%2c143.721%2c640.81C166.679%2c677.482%2c214.857%2c682.266%2c258.092%2c680.624' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M100.542%2c629.202C154.949%2c629.668%2c214.668%2c629.031%2c246.179%2c584.675C282.132%2c534.067%2c286.574%2c464.868%2c255.441%2c411.16C224.389%2c357.593%2c162.356%2c329.88%2c100.542%2c333.438C44.253%2c336.678%2c1.588%2c378.358%2c-26.269%2c427.377C-53.722%2c475.684%2c-70.398%2c535.17%2c-40.838%2c582.217C-12.521%2c627.285%2c47.318%2c628.746%2c100.542%2c629.202' fill='rgba(129%2c 78%2c 54%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1010'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");*/
@@ -45,8 +54,9 @@ html,body{
     max-height: 20vw;
 }
 .dex-btn-img{
-    max-width: 7vw;
-    max-height: 4.5vw;
+    width: 13vw;
+    max-width: 225px;
+    max-height: 9vw;
     border-radius: 18px;
     box-shadow: 0px 0px 10px rgba(64, 23, 3, 0.58);
     margin: 1vw 0.5vw;
@@ -67,6 +77,13 @@ html,body{
 
 .border-white{
     border: 2px solid white !important;
+}
+
+.d-order-1{
+    order: 1;
+}
+.d-order-2{
+    order: 2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -98,13 +115,24 @@ html,body{
 
 
     .dex-btn-img{
-        max-width: 17vw;
-        max-height: 14.5vw;
+        width: 22vw;
+        max-width: 425px;
+        max-height: 24.5vw;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(64, 23, 3, 0.58);
         margin: 1vw 0.5vw;
         border: 2px solid white;
         opacity: 0.9;
+    }
+
+    .m-order-1{
+        order: 1 !important;
+    }
+    .m-order-2{
+        order: 2 !important;
+    }
+    .m-pb-10{
+        padding-bottom: 10vw;
     }
 
 

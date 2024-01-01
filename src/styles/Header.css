@@ -1,11 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-@font-face {
-    font-family: Rubik;
-    src: url('fonts/RubikDoodleShadow-Regular.ttf');
-}
-
 .header-wrapper{
     display: flex;
     flex-wrap: nowrap;
@@ -45,11 +40,14 @@ label{
     font-weight: lighter;
 
 }
-
+.holder-badge{
+    max-width: 1.5vw;
+    margin-right: 1vw;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.58));
+}
 .logo{
     flex-basis: 30%;
     font-size: 1.3vw;
-    font-family: Rubik !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1vw;

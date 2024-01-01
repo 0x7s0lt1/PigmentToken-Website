@@ -9,7 +9,7 @@ const projectId = '1bcfe23b5a3b21d319fdb5cfc819af1a'
 const mainnet = {
     chainId: 137,
     name: 'Polygon Mainnet',
-    currency: 'PGMT',
+    currency: 'MATIC',
     explorerUrl: 'https://polygonscan.com',
     rpcUrl: 'https://polygon-rpc.com'
 }
@@ -19,7 +19,7 @@ const metadata = {
     name: 'PigmentToken',
     description: 'Support an artist with a pigment.',
     url: 'https://pigmentoken.org',
-    icons: ['/img/trans.png']
+    icons: ['https://pigmentoken.org/img/trans.png']
 }
 
 createWeb3Modal({
@@ -28,7 +28,7 @@ createWeb3Modal({
     tokens: {
         137: {
             address: '0xC76440DbdB9B42Ae2BF0269D12280614604d43e8',
-            image: 'https://pgmt.vercel.app/img/trans.png'
+            image: 'https://pigmentoken.org/img/trans.png'
         }
     },
     projectId

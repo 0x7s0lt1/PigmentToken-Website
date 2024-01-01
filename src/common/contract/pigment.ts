@@ -1,4 +1,9 @@
-const PigmentAbi = [
+
+export const Address = "0xC76440DbdB9B42Ae2BF0269D12280614604d43e8";
+export const ChainId = 137;
+export const Decimals = 18;
+
+export const Abi = [
     {
         "inputs": [
             {
@@ -603,5 +608,3 @@ const PigmentAbi = [
         "type": "function"
     }
 ];
-
-export default PigmentAbi;
