@@ -1,5 +1,6 @@
 import {FC} from "react";
 import Link from "next/link";
+import Socials from "@/modules/Socials/Socials";
 
 const Footer: FC = () => {
     return (
@@ -10,6 +11,7 @@ const Footer: FC = () => {
                         <img alt='PolygonScan' src='/img/p-scan.svg'/>
                     </Link>
                     <p className="text-white">© 2023 Pigment Token. All rights reserved.</p>
+                    <Socials/>
                 </div>
             </div>
         </footer>
