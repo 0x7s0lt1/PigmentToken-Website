@@ -14,7 +14,6 @@ import Confetti from "@/modules/Confetti/Confetti";
 
 const Index : FC = () => {
 
-    const [isHolder, setIsHolder] = useState(false);
 
     useEffect(() => {
         AOS.init({
@@ -27,12 +26,6 @@ const Index : FC = () => {
         <>
             <MainLayout>
                 <Meta title={"PigmentToken"} description={"PigmentToken"} />
-                <Header
-                    isHolder={isHolder}
-                />
-                <Confetti
-                    setIsHolder={setIsHolder}
-                />
                 <Hero/>
                 <div>
 

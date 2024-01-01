@@ -4,13 +4,14 @@ import Header from "@/common/layout/header/Header";
 import Footer from "@/common/layout/footer/Footer";
 import Meta from "@/common/layout/Meta";
 import Image from "next/image";
+import {useSearchParams} from "next/navigation";
 
 const About: FC = () => {
+
     return (
         <>
             <MainLayout>
                 <Meta title={"About"} description={"PigmentToken"} />
-                <Header />
                 <div className="d-flex align-items-center">
                     <Image
                         data-aos="fade-right"

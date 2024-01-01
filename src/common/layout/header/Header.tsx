@@ -1,16 +1,17 @@
-import {FC} from "react";
+import {FC, useState} from "react";
 import Link from "next/link";
 import {Web3ModalProvider} from "@/common/layout/Web3Modal";
+import Confetti from "@/modules/Confetti/Confetti";
 
-type Props = {
-    isHolder: boolean
-};
 
-const Header : FC<Props> = ({isHolder}) => {
+const Header : FC = () => {
+
+    const [isHolder, setIsHolder] = useState(false);
 
     return (
         <>
             <Web3ModalProvider/>
+            <Confetti setIsHolder={setIsHolder}/>
             <div className="header-wrapper">
                 <header className="header shadow">
                     <Link href={"/"} className="logo text-rubik">

@@ -10,7 +10,6 @@ const Blog: FC = () => {
         <>
             <MainLayout>
                 <Meta title={"Blog"} description={"PigmentToken"} />
-                <Header />
                 <div className="d-flex align-items-center">
                     <Image
                         data-aos="fade-right"
