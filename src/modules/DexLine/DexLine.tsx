@@ -15,8 +15,7 @@ const DexLine: FC = () => {
                         providing flexibility and accessibility in the cryptocurrency ecosystem.
                     </p>
                 </div>
-                <div className="stick  px-2 w-100" data-aos="zoom-in-up">
-
+                <div className="stick dex-line-wrapper rounded-5 shadow bg-ligh px-2 w-100" data-aos="zoom-in-up">
                     <Link href="https://info.uniswap.org/#/polygon/pools/0x530d01625ced24f0fd98056bef6454961393a15b"
                           target="_blank">
                         <img className="dex-btn-img" src="/img/uniswap/UNI-Price.webp" alt="uniswap"/>
@@ -30,7 +29,7 @@ const DexLine: FC = () => {
                     <Link href="https://www.vizslaswap.com/" target="_blank">
                         <img className="dex-btn-img" src="/img/vizslaswap/NpHOQ7clngTc4DhH.jpg" alt="vizslaswap"/>
                     </Link>
-                    <Link href="https://www.sushi.com/swap" target="_blank">
+                    <Link href="https://www.sushi.com/swap?chainId=137&token0=NATIVE&token1=0xC76440DbdB9B42Ae2BF0269D12280614604d43e8" target="_blank">
                         <img className="dex-btn-img" src="/img/sushiswap/sushiswap.jpeg" alt="sushiswap"/>
                     </Link>
                 </div>
